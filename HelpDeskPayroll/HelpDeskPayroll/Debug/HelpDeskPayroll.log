@@ -1,0 +1,16 @@
+﻿Build started 03/04/2013 20:29:11.
+     1>Project "C:\Users\Daniel\Documents\GitHub\HelpDeskAccountingApp\HelpDeskPayroll\HelpDeskPayroll\HelpDeskPayroll.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\main.cpp(70): warning C4091: 'static ' : ignored on left of 'HelperFunctions' when no variable is declared
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\main.cpp(115): warning C4018: '>=' : signed/unsigned mismatch
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\main.cpp(153): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\main.cpp(172): warning C4091: 'static ' : ignored on left of 'WorkForcePay' when no variable is declared
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\main.cpp(176): error C2676: binary '[' : 'Employee' does not define this operator or a conversion to a type acceptable to the predefined operator
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\main.cpp(176): error C2227: left of '->CalculatePay' must point to class/struct/union/generic type
+     1>Done Building Project "C:\Users\Daniel\Documents\GitHub\HelpDeskAccountingApp\HelpDeskPayroll\HelpDeskPayroll\HelpDeskPayroll.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.12
