@@ -39,8 +39,10 @@ class Contractor : public HourlyStaff{
 int Salary;
 };
 
-struct EmployeeTypes{
-	int Senior, Ordinary, Contractor;
+enum EmployeeTypes{
+	Senior,
+	Ordinary,
+	Contractor
 };
 
 int main ()
