@@ -22,6 +22,7 @@ class Employee{
 		double Name, Position;
 		void CalculatePay();
 		void GetName();
+		void GetPay();
 };
 
 class SalriedStaff : public Employee{ 
@@ -53,6 +54,18 @@ class Contractor : public HourlyStaff{
 		Contractor(){this->EmployeeType=EmployeeTypes::Contractor;}
 		int Salary;
 };
+
+void Employee::GetName(){
+	string Name;
+	cout << "Enter Employee Name" << endl;
+	cin >> Name;
+}
+
+void Employee::GetPay(){
+	string Pay;
+	cout << "Enter Pay For Employee" << endl;
+	cin >> Pay;
+}
 
 const string DefaultFile = "PayDetails.txt";
 const int DefaultWidth = 70; 
