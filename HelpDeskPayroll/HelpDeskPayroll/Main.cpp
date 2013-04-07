@@ -71,7 +71,9 @@ void HourlyStaff::GetPay(){
 string hours;
 cout << "Enter amount of hours worked for the Employee" << endl;
  cin >> hours;
- HourlyStaff.HoursWorked = atoi(hours);
+ char Temp[200];
+ HelperFunctions::ConvertStringToCharArray(hours, Temp);
+ this -> HoursWorked = atoi(Temp);
 
  string Pay = "";
  cout << "Enter hourly pay for Employee" << endl;
