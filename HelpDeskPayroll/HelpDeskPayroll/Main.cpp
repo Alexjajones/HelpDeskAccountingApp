@@ -19,7 +19,8 @@ enum EmployeeTypes{
 class Employee{
 	public:
 		int ID, EmployeeType;
-		double Name, Position;
+		string Name, Pay;
+		EmployeeTypes Position;
 		void CalculatePay();
 		void GetName();
 		void GetPay();
@@ -33,6 +34,7 @@ class SalriedStaff : public Employee{
 
 class HourlyStaff : public Employee{ 
 	public:
+		int HoursWorked();
 		void CalculatePay();
 		void GetPay();
 };
@@ -56,16 +58,59 @@ class Contractor : public HourlyStaff{
 };
 
 void Employee::GetName(){
-	string Name;
-	cout << "Enter Employee Name" << endl;
-	cin >> Name;
+	string Name = "";
+	cout << "Enter a name: "; 
+	cin >> Name;	
+	while (!HelperFunctions::ValidateName(Name)){
+		cout <<"Please enter a valid name"<< endl; cin >> Name;
+	};
+	this -> Name = Name ;
 }
 
-void Employee::GetPay(){
-	string Pay;
-	cout << "Enter Pay For Employee" << endl;
-	cin >> Pay;
+void HourlyStaff::GetPay(){
+string hours;
+cout << "Enter amount of hours worked for the Employee" << endl;
+ cin >> hours;
+ HourlyStaff.HoursWorked = atoi(hours);
+
+ string Pay = "";
+ cout << "Enter hourly pay for Employee" << endl;
+ cin >> Pay;
+ while (!HelperFunctions::ValidatePay(Pay)){
+	 cout << "Please enter a valid pay" << endl; cin >> Pay;
+};
+ this -> Pay = Pay ;
 }
+
+
+void SalriedStaff::GetPay(){	
+ string Pay = "";
+ cout << "Enter salaried pay for Employee" << endl;
+ cin >> Pay;
+ while (!HelperFunctions::ValidatePay(Pay)){
+	 cout << "Please enter a valid pay" << endl; cin >> Pay;
+};
+ this -> Pay = Pay ;
+}
+
+void HourlyStaff::CalculatePay(){
+
+
+}
+
+void SalriedStaff::CalculatePay(){
+
+
+}
+
+
+
+
+//calucate pay
+
+//switch
+//each type of staff 
+
 
 const string DefaultFile = "PayDetails.txt";
 const int DefaultWidth = 70; 
@@ -182,9 +227,9 @@ public:
 		Senior = 0;
 		Ordinary = 0;
 		Contractor = 0;
-		DefaultSalaried = 0;
-		DefaultHourly = 0;
-		DefaultPayIncrease = 0;
+		DefaultSalaried = 20000;
+		DefaultHourly = 8;
+		DefaultPayIncrease = 0.1;
 	}
 	static double Total, Senior, Ordinary, Contractor, DefaultSalaried, DefaultHourly, DefaultPayIncrease, NumberOfEmployees;
 	void CalculateTotalPays(Employee PayArray[]);
