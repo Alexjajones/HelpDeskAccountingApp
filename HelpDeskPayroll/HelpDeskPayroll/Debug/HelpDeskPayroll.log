@@ -1,16 +1,29 @@
-﻿Build started 03/04/2013 20:29:11.
+﻿Build started 08/04/2013 20:14:22.
      1>Project "C:\Users\Daniel\Documents\GitHub\HelpDeskAccountingApp\HelpDeskPayroll\HelpDeskPayroll\HelpDeskPayroll.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
          Main.cpp
-     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\main.cpp(70): warning C4091: 'static ' : ignored on left of 'HelperFunctions' when no variable is declared
-     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\main.cpp(115): warning C4018: '>=' : signed/unsigned mismatch
-     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\main.cpp(153): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\main.cpp(172): warning C4091: 'static ' : ignored on left of 'WorkForcePay' when no variable is declared
-     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\main.cpp(176): error C2676: binary '[' : 'Employee' does not define this operator or a conversion to a type acceptable to the predefined operator
-     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\main.cpp(176): error C2227: left of '->CalculatePay' must point to class/struct/union/generic type
-     1>Done Building Project "C:\Users\Daniel\Documents\GitHub\HelpDeskAccountingApp\HelpDeskPayroll\HelpDeskPayroll\HelpDeskPayroll.vcxproj" (Build target(s)) -- FAILED.
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\employee.h(22): warning C4101: 'Temp2' : unreferenced local variable
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\employee.h(66): warning C4482: nonstandard extension used: enum 'EmployeeTypes' used in qualified name
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\workforcepay.h(15): warning C4482: nonstandard extension used: enum 'EmployeeTypes' used in qualified name
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\workforcepay.h(18): warning C4482: nonstandard extension used: enum 'EmployeeTypes' used in qualified name
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\workforcepay.h(37): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\workforcepay.h(37): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\workforcepay.h(37): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\helperfunctions.h(91): warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\helperfunctions.h(99): warning C4018: '>=' : signed/unsigned mismatch
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\helperfunctions.h(134): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\helperfunctions.h(151): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\daniel\documents\github\helpdeskaccountingapp\helpdeskpayroll\helpdeskpayroll\helperfunctions.h(78): warning C4715: 'HelperFunctions::ReadFromFile' : not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Daniel\Documents\GitHub\HelpDeskAccountingApp\HelpDeskPayroll\Debug\HelpDeskPayroll.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\HelpDeskPayroll.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Daniel\Documents\GitHub\HelpDeskAccountingApp\HelpDeskPayroll\Debug\HelpDeskPayroll.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Daniel\Documents\GitHub\HelpDeskAccountingApp\HelpDeskPayroll\Debug\HelpDeskPayroll.lib" /MACHINE:X86 Debug\HelpDeskPayroll.exe.embed.manifest.res
+         Debug\Main.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\HelpDeskPayroll.exe.embed.manifest" /manifest Debug\HelpDeskPayroll.exe.intermediate.manifest
+       LinkEmbedManifest:
+         HelpDeskPayroll.vcxproj -> C:\Users\Daniel\Documents\GitHub\HelpDeskAccountingApp\HelpDeskPayroll\Debug\HelpDeskPayroll.exe
+     1>Done Building Project "C:\Users\Daniel\Documents\GitHub\HelpDeskAccountingApp\HelpDeskPayroll\HelpDeskPayroll\HelpDeskPayroll.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:01.12
+Time Elapsed 00:00:01.06
